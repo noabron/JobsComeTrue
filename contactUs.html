@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>job's come true- צור קשר</title>
+    <meta name="description" content="דף צור קשר על מנת ליצור קשר עם יוצרי האתר" />
+    <meta name="keywords" content="צור קשר, צרו איתנו קשר, שאלות" />
+    <meta name="author" content="נועה ברונפלד, עפרי פניאס, ליאל בך, לינוי אלבחרי" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <!--logo-->
+    <link rel="icon" href="imeg/logo.png">
+</head>
+<body>
+    <main>
+        <div id="container_contact">
+            <div id="background2_contact">
+                <div id="skipToContent">
+                    <a href="#articantact">דלג לתוכן העמוד</a>
+                </div>
+
+                <header>
+                    <a href="index.html">  <img src="imeg/logo.png" class="inlin" id="logo" alt="לוגו-jobs come true" /></a>
+
+                    <nav id="mainBar" class="inlin" aria-label="תפריט ראשי">
+                        <ul>
+                            <li>
+                                <a href="" class="notActiv">קורות חיים</a>
+                                <ul id="cvBar">
+                                    <li><a href="" class="notActiv">בניית קורת חיים</a></li>
+                                    <li><a href="" class="notActiv">דוגמאות</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="notActiv">פלטפורומות דרושים</a></li>
+                            <li>
+                                <a href="Page1.html">ראיון עבודה</a>
+                                <ul id="SecondBar">
+                                    <li>
+                                        <a href="Page1.html">  לפני הראיון </a>
+                                        <ul id="ThirdBar">
+                                            <li><a href="" class="notActiv">שאלות לקראת הראיון</a></li>
+                                            <li><a href="" class="notActiv">סימולציות לראיון</a></li>
+                                            <li><a href="" class="notActiv">שליטה בקורות חיים</a></li>
+                                            <li><a href="Page2.html">טיפים ללבוש</a></li>
+                                            <li><a href="" class="notActiv">הכנה נפשית </a></li>
+                                            <li><a href="" class="notActiv">למידת הארגון והמשרה</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="" class="notActiv">בראיון</a></li>
+                                    <li><a href="" class="notActiv">מנקודת מבטו של המראיין</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="notActiv">סיפורי הצלחה</a></li>
+                        </ul>
+                    </nav>
+                    <nav id="nav2" role="navigation" aria-label="מיקומך באתר">
+                        <ol>
+                            <li><a href="index.html">דף הבית</a></li>
+                            <li>צור קשר</li>
+                        </ol>
+                    </nav>
+                </header>
+                <article id="articantact">
+                    <img src="imeg/תמונה3.png" id="imgabout" alt=" " class="paintsquar" />
+                    <h1 class="pagename">צור קשר</h1>
+                    <section id="pcontactus">
+                        <p>
+                            הצלחתם להתקבל לעבודה ויש לכם טיפים נוספים? <br>
+                            יש לכם שאלות בשבילנו? <br>
+                            צרו איתנו קשר! <br>
+                        </p>
+                    </section>
+                    <form role="form" id="fcontactus" aria-label="טופס צור קשר">
+                        <input type="hidden" id="myEmail" name="ofri" value="ofripenias@gmail.com">
+                        <label for="Name">
+                            שם מלא:
+                            <br>
+                            <input type="text" id="Name" class="txtarea" required aria-required="true">
+                        </label><br> <br />
+                        <label for="age">
+                            גיל:
+                            <br>
+                            <input type="number" id="age" class="txtarea">
+                        </label><br><br />
+                        <p>מין</p>
+                        <br>
+                        <label for="male" id="male">
+                            <input type="radio" id="male" name="מין"> זכר
+                        </label>
+                        <label for="female" id="female">
+                            <input type="radio" id="female" name="מין"> נקבה
+                        </label><br><br />
+                        <label for="email">
+                            כתובת אימייל:
+                            <br>
+                            <input type="email" id="email" class="txtarea" required aria-required="true">
+                        </label><br><br />
+                        <p>נושא הפנייה:</p>
+                        <br>
+                        <select id="selectoption" role="selectoption" class="txtarea">
+                            <option value="1">בחר ערך מהרשימה</option>
+                            <option value="2">קורות חיים</option>
+                            <option value="3">ראיון עבודה</option>
+                            <option value="4">פלטפורמות למציאת עבודה</option>
+                            <option value="5">טיפים והמלצות</option>
+                            <option value="6">אחר</option>
+                        </select><br><br />
+                        <label for="ContentReferral">
+                           תוכן הפנייה:
+                            <br>
+                            <textarea id="contentreferral" class="txtarea" placeholder="הזן את תוכן הפנייה" rows="8" required aria-required="true"></textarea> <br /><br />
+                        </label>
+                        <label for="send">
+                            <input id="sendform" type="submit" value="שליחה" />
+                        </label>
+                        <div id="feedback" role="alert"></div>
+                    </form>
+
+                </article>
+                <footer id="footer_contactus">
+                    <img src="imeg/קו לפוטר.png" id="footerline" alt=" " />
+                    <nav id="footerBar" class="inlin" aria-label="תפריט תחתון- צור קשר, אודות ,מפת אתר">
+                        <ol>
+                            <li><a href="contactUs.html">צור קשר</a></li>
+                            <li><a href="about.html">אודות</a></li>
+                            <li><a href="siteMap.html">מפת אתר</a></li>
+                        </ol>
+                    </nav>
+                </footer>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,1124 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'calibril';
+    src: url('../fonts/calibril.ttf');
+    src: url('../fonts/calibril.eot') format('embedded-opentype'),url('../fonts/calibril.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DanaYadAlefAlefAlef-Normal';
+    src: url('../fonts/dana-yad-alefalefalef/DanaYadAlefAlefAlef-Normal.eot');
+    src: url('../fonts/dana-yad-alefalefalef/DanaYadAlefAlefAlef-Normal.eot') format('embedded-opentype'),url('../fonts/dana-yad-alefalefalef/DanaYadAlefAlefAlef-Normal.ttf') format('truetype');
+}
+
+body { 
+    direction: rtl;
+}
+/*הגדרות container ועיצוב רקע_____________*/
+#container {
+    margin: 0 auto;
+    background-image: url('../imeg/רקע סופי אחורי.jpg');
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    position: relative;
+    width: 1280px;
+    height: 2756px;
+    font-family: 'calibril';
+    background-size: cover;
+}
+
+ #background1 {
+    background-image: url('../imeg/רקע סופי פנימי.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1185px;
+    right: 91PX;
+    top: 70px;
+    width: 1080px;
+    height: 2600px;
+    background-size: cover;
+}
+#background2 {
+    background-image: url('../imeg/רקע.jpeg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1185px;
+    right: 91PX;
+    top: 70px;
+    width: 1080px;
+    height: 1414px;
+    background-size: cover;
+}
+/*עיצוב -דלג לתוכן_______________________________________*/
+#skipToContent {
+    text-decoration: none;
+    background-color: #F4ECE0;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'calibril';
+    margin-bottom: 7px;
+    width: 148px;
+    height: 29px;
+    border: 1px solid #cec4c1;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    top: 7px;
+    right: 10px;
+}
+#skipToContent a{
+    top:20px;
+}
+
+    #skipToContent:hover {
+        text-decoration: underline;
+        background-color: #F0E5D4;
+        font-weight: 600;
+        font-size: 22px;
+    }
+/*    הגדרות ללוגו_________________*/
+#logo {
+    position: relative;
+    right: 31px;
+    top: 50px;
+    height: 69px;
+    width: 150px;
+}
+ .logolink {
+    width: 150px;
+   /* position: relative;
+    right: 31px;
+    top: 50px;*/
+}
+/*בניית תפריטים____________________________*/
+.inlin {
+    display: block;
+    margin-top: -21px;
+}
+
+#mainBar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.notActiv{
+    cursor:not-allowed;
+    color:gray;
+}
+/*הגדרות תפריט ראשי*/
+#mainBar {
+    position: relative;
+    top: -3px;
+    right: 319px;
+}
+    #mainBar li a {
+        display: block;
+        float: right;
+        background-color: white;
+        color: black;
+        width: 160px;
+        height: 15px;
+        padding-top: 16px;
+        padding-bottom: 20px;
+        text-align: center;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'calibril';
+        right: -94px;
+        position: relative;
+        z-index:1;
+    }
+/*    הגדרות תת-תפריט קורות חיים*/
+#cvBar {
+    clear: both;
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 11px;
+    right: -50px;
+    color: black;
+    width: 160px;
+    height: 15px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+/*הגדרות תת-תפריט ראיון עבודה*/
+#SecondBar li a {
+    clear: both;
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 51px;
+    right: 226px;
+    background-color: white;
+    color: black;
+    width: 160px;
+    height: 15px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+/*הגדרות תפריט שלישי*/
+#ThirdBar li a {
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 336px;
+    top: 10px;
+    background-color: white;
+    color: black;
+    width: 160px;
+    height: 15px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    overflow: visible;
+}
+/*מעבר עכבר תפריט ראשון*/
+#mainBar ul li a:hover {
+    background-color:powderblue;
+    color: black;
+    text-decoration:underline;
+}
+nav ul li a:active {
+    background-color: antiquewhite;
+    color: black;
+}
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+}
+#cvBar {
+    display: none;
+    position: absolute;
+}
+  #mainBar ul li:hover #cvBar {
+        display: block;
+        width: 124px;
+        margin-right: 50px;
+        margin-top: 40px;
+    }
+    nav ul li:hover ul {
+        display: block;
+        width: 124px;
+        margin-right: 50px;
+        margin-top: 40px;
+    }
+#SecondBar li ul{
+    display: none;
+    position: absolute;
+}
+#SecondBar li:hover ul {
+    display: block;
+    width: 124px;
+    right: 50px;
+    top: 40px;
+}
+/*תפריט פירורי לחם*/
+#nav2 {
+    position: relative;
+    right: 35px;
+    top: -10px;
+    margin-top: 50px;
+    width: 615px;
+}
+#nav2 ol li {
+   
+    display: inline-block;
+    font-family: 'calibril';
+    margin-top:30px;
+    font-size:17px;
+}
+  
+        #nav2 ol li:after {
+        content: ">";
+    }
+
+    #nav2 ol li:last-child:after {
+        content: "";
+    }
+/*    עיצוב דף בית___________________________*/
+#nootbook {
+    font-family: 'DanaYadAlefAlefAlef-Normal';
+    font-size: 39px;
+    position: relative;
+    top: 188px;
+    right: 355px;
+    width: 449px;
+    transform: rotate( -7deg );
+    letter-spacing: 3px;
+}
+
+#arrow {
+    position: relative;
+    top: 5px;
+    right: 149px;
+    width: 99px;
+    transform: rotateX( 180deg );
+}
+
+/*פסקאות*/
+#homecontent {
+    position: relative;
+    top: 126px;
+    right: 79px;
+}
+    #homecontent div a {
+        font-size: 18px;
+    }
+    #homecontent div p {
+        font-family: 'Alef', sans-serif;
+        font-size: 91px;
+    }
+#homecontent div h1 {
+    font-family: 'calibril';
+
+}
+    #homecontent > div {
+        position: relative;
+        top: 231px;
+        font-size: 25px;
+        color: black;
+        font-family: 'calibril';
+    }
+.pic{
+    width:300px;
+}
+.line {
+    width: 192px;
+}
+#homecontent .left .pic {
+    position: relative;
+    float: left;
+    display: inline-block;
+    right: -264px;
+    top: -89px;
+}
+#homecontent .right .pic {
+    float: right;
+}
+/*תוכן בית קורות חיים*/
+#num1 {
+    position: relative;
+    top: 73px;
+    right: 37px;
+}
+#cv h1, #cv a, #linecv {
+    position: relative;
+    right: 79px;
+    top: 3px;
+    display: block;
+    padding: 2px;
+    z-index: 1;
+}
+
+#imeghome1 {
+    margin-left: -5px;
+}
+
+/*תוכן בית פלטפורמות*/
+#num2 {
+    position: relative;
+    top: 240px;
+    right: 456px;
+}
+
+#platform h1, #platform a, #lineplatform {
+    position: relative;
+    right: 504px;
+    top: 169px;
+    display: block;
+    padding: 2px;
+    z-index: 1;
+}
+
+#imeghome2 {
+    margin-top: 68px;
+    margin-right: 62px;
+}
+/*תוכן בית טיפים*/
+#num3 {
+    position: relative;
+    top: 413px;
+    right: -334px;
+}
+
+#tip h1, #tip a, #linetip {
+    position: relative;
+    right: -286px;
+    top: 344px;
+    display: block;
+    padding: 2px;
+    z-index: 1;
+}
+
+#imeghome3 {
+    margin-top: 331px;
+}
+/*תוכן בית אמונה*/
+#num4 {
+    position: relative;
+    top: 557px;
+    right: 89px;
+}
+
+#faith h1, #faith a, #linefaith {
+    position: relative;
+    right: 155px;
+    top: 489px;
+    display: block;
+    padding: 2px;
+    z-index: 1;
+}
+
+    #imeghome4 {
+        margin-top: 402px;
+        margin-right: 62px;
+    }
+
+/*תוכן בית בהצלחה*/
+
+#Successfullyp {
+    float: left;
+    margin-left: 138px;
+    margin-top: 401px;
+    width: 345px;
+}
+
+#Successfully #Successfully_p {
+    position: relative;
+    top: 786px;
+    right: -265px;
+    font-family: 'calibril';
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#Successfullyline {
+    width: 345px;
+    position: relative;
+    top: 855px;
+    right: -265px;
+}
+#footer_index {
+    top: 349px;
+    position: relative;
+}
+/*footer_________________________________________________________________________________*/
+#footerline {
+    position: relative;
+    top: 99px;
+    right: 76px;
+    width: 934px;
+}
+#footerBar ol li {
+    display: inline-block;
+    font-family: 'calibril';
+    margin-left: 42px;
+}
+
+    #footerBar ol li:after {
+        content: "  ";
+    }
+
+    #footerBar ol li:last-child:after {
+        content: "";
+    }
+
+#footerBar {
+    position: relative;
+    right: 44px;
+    top: 127px;
+    font-size: 17px;
+}
+
+/*דף תוכן 1_________________________________*/
+#container_page1 {
+    margin: 0 auto;
+    background-image: url('../imeg/רקע סופי אחורי.jpg');
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    position: relative;
+    width: 1280px;
+    height: 1864px;
+    font-family: 'calibril';
+    background-size: cover;
+}
+
+#background2_page1 {
+    background-image: url('../imeg/רקע.jpeg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1185px;
+    right: 91PX;
+    top: 70px;
+    width: 1080px;
+    height: 1719px;
+    background-size: cover;
+}
+    #imgframe p {
+    position: relative;
+    font-family: 'calibril';
+    right: 340px;
+    top: -127px;
+    font-size: 20px;
+}
+#frame {
+    width: 468px;
+    position: relative;
+    right: 260px;
+}
+#page1content h1 {
+    position: relative;
+    font-family: 'calibril';
+    right: 275px;
+    top: -49px;
+    font-size: 20px;
+}
+#page1 #page1kav {
+    width: 468px;
+    position: relative;
+    right: 260px;
+    top: -122px;
+}
+/*הגדרות כלליות*/
+.page1h2 {
+    font-family: 'calibril';
+    color:#a34c4c;
+    font-size:20px;
+}
+#page1content a {
+    font-family: 'calibril';
+    color:black;
+}
+#page1content .left .pic {
+    position: relative;
+    float: left;
+    display: inline-block;
+}
+
+#page1content .right .pic {
+    float: right;
+}
+/*תוכן שאלות לקראת הראיון*/
+#pic1 {
+    position: relative;
+    top: -188px;
+    right: 37px;
+}
+
+#ask h2, #ask a {
+    position: relative;
+    right: 79px;
+    top: -61px;
+    display: block;
+    padding: 2px;
+    z-index: 1;
+}
+/*תוכן סימולציות לראיון*/
+#pic2 {
+    position: relative;
+    right: -118px;
+    top: -14px;
+}
+
+#simul h2, #simul a {
+    position: relative;
+    right: -32px;
+    top: 79px;
+    display: block;
+    padding: 2px;
+    z-index: 1;
+}
+/*תוכן שליטה בקורות החיים*/
+#pic3 {
+    position: relative;
+    right: -263px;
+    top: 133px;
+}
+#control h2, #control a {
+    position: relative;
+    right: 375px;
+    top: -80px;
+    display: block;
+    padding: 2px;
+    max-width: fit-content;
+    z-index: 1;
+}
+
+/*תוכן טיפים ללבוש*/
+#pic4 {
+    position: relative;
+    right: -105px;
+    top: 14px;
+}
+
+#tiptow h2, #tiptow a {
+    position: relative;
+    right: 262px;
+    top: 119px;
+    display: block;
+    padding: 2px;
+}
+/*תוכן שליטה בקורות החיים*/
+#pic5 {
+    position: relative;
+    right: 40px;
+    top: 174px;
+}
+
+#preparation h2, #preparation a {
+    position: relative;
+    right: 71px;
+    top: 268px;
+    display: block;
+    padding: 2px;
+    z-index: 1;
+}
+/*תוכן שליטה בקורות החיים*/
+#pic6 {
+    position: relative;
+    right: 197px;
+    top: 345px;
+}
+
+#Learning h2, #Learning a {
+    position: relative;
+    right: 254px;
+    top: 195px;
+    display: block;
+    padding: 2px;
+    max-width: fit-content;
+    z-index: 1;
+}
+
+#p_1 {
+    position: relative;
+    right: -17px;
+    top: 172px;
+}
+
+/*דף תוכן 2_________________________________*/
+#container_page2 {
+    margin: 0 auto;
+    background-image: url('../imeg/רקע סופי אחורי.jpg');
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    position: relative;
+    width: 1280px;
+    height: 2281px;
+    font-family: 'calibril';
+    background-size: cover;
+}
+#background2_page2 {
+    background-image: url('../imeg/רקע.jpeg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1185px;
+    right: 91PX;
+    top: 70px;
+    width: 1080px;
+    height: 2129px;
+    background-size: cover;
+}
+#paintsquar_2 {
+    position: relative;
+    top: 15px;
+    width: 164px;
+    right: 429px;
+    height: 50px;
+}
+
+#pagename_2 {
+    font-size: 30px;
+    font-family: 'calibril';
+    position: relative;
+    top: -26px;
+    right: 439px;
+}
+
+#tzitut {
+    font-size: 28px;
+    font-style: italic;
+    position: relative;
+    right: 200px;
+    font-weight: 600;
+    font-family: 'calibril';
+    top: 40px;
+}
+#dresscodephoto {
+    position: relative;
+    right: 130px;
+    top: 120px;
+}
+
+#do {
+    font-size: 28px;
+    position: relative;
+    right: 298px;
+    top: 236px;
+    font-weight: 600;
+    font-family: 'calibril';
+}
+#howtodress {
+    font-size: 24px;
+    position: relative;
+    right: 481px;
+    top: 209px;
+    font-family: 'calibril';
+    font-size: 25px;
+}
+.triangle {
+    position: relative;
+    top: 7px;
+    right: -5px;
+}
+.coteret {
+    color: #AA5B48;
+    font-weight: 600;
+    font-size: 28px;
+    text-decoration: none;
+    font-family: 'calibril';
+    position: relative;
+    top: 144px;
+    right: 20px;
+}
+#video_dress{
+ right: 339px;
+    position: relative;
+    top: 227px;
+}
+#video_dress video {
+    width: 328px;
+    
+}
+    #video_dress h2 {
+        font-family: 'calibril';
+        font-size: 22px;
+        margin-bottom:22px;
+    }
+#p_2 {
+    position: relative;
+    right: -17px;
+    top: 183px;
+}
+    /*הגדרות כלליות עמודים -foot,dresscode,color___________*/
+    .melel {
+        font-size: 24px;
+        height: 40px;
+        line-height: 150%;
+        font-family: 'calibril';
+        width: 1053px;
+        position: relative;
+        top: 30px;
+        right: 19px;
+    }
+.dresscodephoto2 {
+    position: relative;
+    right: 342px;
+    top: 142px;
+    width: 350px;
+}
+.p_3 {
+    position: relative;
+    right: -17px;
+    top: 131px;
+}
+#p_3_foot {
+    position: relative;
+    right: -17px;
+    top: 37px;
+}
+/*עמוד פנימי color הגדרות___________*/
+#container_page2_pnimi {
+    margin: 0 auto;
+    background-image: url('../imeg/רקע סופי אחורי.jpg');
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    position: relative;
+    width: 1280px;
+    height: 965px;
+    font-family: 'calibril';
+}
+
+#background2_page2_pnimi {
+    background-image: url('../imeg/רקע.jpeg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1185px;
+    right: 91PX;
+    top: 70px;
+    width: 1080px;
+    height: 826px;
+}
+#paintsquar_4 {
+    position: relative;
+    top: 31px;
+    width: 219px;
+    right: 371px;
+}
+
+.pagename_4 {
+    font-size: 30px;
+    font-family: 'calibril';
+    position: relative;
+    top: -8px;
+    right: 392px;
+}
+/*הגדרות foot עמוד פנימי________________________*/
+#container_page2_pnimi_foot {
+    margin: 0 auto;
+    background-image: url('../imeg/רקע סופי אחורי.jpg');
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    position: relative;
+    width: 1280px;
+    height: 1057px;
+    font-family: 'calibril';
+}
+#background2_page2_pnimi_foot {
+    background-image: url('../imeg/רקע.jpeg');
+    position: relative;
+    background-repeat: no-repeat;
+    right: 91PX;
+    top: 70px;
+    width: 1080px;
+    height: 942px;
+}
+#paintsquar_5 {
+    position: relative;
+    top: 35px;
+    width: 289px;
+    right: 375px;
+}
+#do2 {
+    font-size: 28px;
+    position: relative;
+    right: 367px;
+    top: 208px;
+    font-weight: 600;
+    font-family: 'calibril';
+}
+
+#howtodressshoes {
+    font-size: 28px;
+    position: relative;
+    right: 553px;
+    top: 180px;
+    font-family: 'calibril';
+}
+#shoesphoto {
+    position: relative;
+    right: 242px;
+    top: 114px;
+    width: 536px;
+}
+/*הגדרות עמוד פנימי dresscode___________*/
+#paintsquar_3 {
+    position: relative;
+    top: 22px;
+    width: 271px;
+    right: 371px;
+}
+
+#pagename_3 {
+    font-size: 30px;
+    font-family: 'calibril';
+    position: relative;
+    top: -27px;
+    right: 387px;
+}
+
+/*אודות________________________________________________________*/
+#container_about {
+    margin: 0 auto;
+    background-image: url('../imeg/רקע סופי אחורי.jpg');
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    position: relative;
+    width: 1280px;
+    height: 1667px;
+    font-family: 'calibril';
+    background-size: cover;
+}
+#background2_about {
+    background-image: url('../imeg/רקע.jpeg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1185px;
+    right: 91PX;
+    top: 70px;
+    width: 1080px;
+    height: 1525px;
+    background-size: cover;
+}
+.paintsquar {
+    position: relative;
+    top: 14px;
+    width: 116px;
+    right: 462px;
+}
+.pagename {
+    font-size: 30px;
+    font-family: 'calibril';
+    position: relative;
+    top: -39px;
+    right: 479px;
+}
+#aboutContact {
+    position: relative;
+    right: 47px;
+    width: 974px;
+}
+#aboutContact h2 {
+    color:darkgreen;
+    font-family: 'calibril';
+    font-size: 25px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+
+#aboutContact p, #aboutContact ul li {
+    font-family: 'calibril';
+    font-size: 20px;
+}
+#ourimags {
+    padding-top: 28px;
+    display: inline-block;
+}
+.imgteam{
+    margin:11px;
+}
+#nameteam p {
+    display: inline-block;
+    color: darkgreen;
+    margin-right: 152px;
+    position: relative;
+    right: -83px;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+.telemweb {
+    color: darkgreen;
+    font-family: 'calibril';
+    font-size: 20px;
+}
+#telemlogo {
+    position: relative;
+    top: 68px;
+    text-align: center;
+}
+#telemimg {
+    margin-top: 37px;
+}
+/*צור קשר________________________________________________*/
+#container_contact {
+    margin: 0 auto;
+    background-image: url('../imeg/רקע סופי אחורי.jpg');
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    position: relative;
+    width: 1280px;
+    height: 1366px;
+    font-family: 'calibril';
+    background-size: cover;
+}
+#background2_contact {
+    background-image: url('../imeg/רקע.jpeg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1185px;
+    right: 91PX;
+    top: 70px;
+    width: 1080px;
+    height: 1230px;
+    background-size: cover;
+}
+
+#pcontactus p {
+    font-size: 24pt;
+    text-align: center;
+    position: relative;
+    right: -24px;
+    top: 33px;
+    font-family: 'calibril';
+}
+#sendform {
+    background-color: #EDC5AB;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-right: 239px;
+}
+
+    #sendform:hover {
+        background-color:lightsalmon;
+        text-decoration:underline;
+    }
+
+.txtarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    font-family: 'calibril';
+}
+
+    .txtarea:hover {
+        color: black;
+    }
+
+#fcontactus {
+    border-radius: 5px;
+    background-color: #E7E6E6;
+    padding: 50px;
+    width: 600px;
+    position: relative;
+    top: 57px;
+    right: 150px;
+    height: 623px;
+}
+
+#fcontactus label{
+    font-family: 'calibril';
+    font-size:17px;
+}
+#fcontactus p {
+    font-family: 'calibril';
+    font-size: 17px;
+}
+footer_contactus{
+    position:relative;
+    top:10px;
+}
+/*מפת אתר_________________________________*/
+#container_page2_pnimi_map {
+    margin: 0 auto;
+    background-image: url('../imeg/רקע סופי אחורי.jpg');
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    position: relative;
+    width: 1280px;
+    height: 843px;
+    font-family: 'calibril';
+}
+#background2_page2_pnimi_map {
+    background-image: url('../imeg/רקע.jpeg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1185px;
+    right: 91PX;
+    top: 70px;
+    width: 1080px;
+    height: 692px;
+}
+#paintsquar_sitemap {
+    position: relative;
+    top: 14px;
+    width: 132px;
+    right: 465px;
+}
+#ordermap {
+    position: relative;
+    top: 34px;
+    right: 33px;
+}
+
+#ordermap ul li {
+    list-style: none;
+    font-family: 'calibril';
+}
+.fchild li:first-child {
+    font-weight: bold;
+    font-size: 24px;
+    list-style: none;
+}
+#ordermap ul {
+    display: inline-block;
+    padding: 13px;
+}
+.secnav {
+    font-weight: 600;
+    font-size: 18px;
+}
+#mapS1 {
+    position: relative;
+    top: -158px;
+}
+#mapS2 {
+    position: relative;
+    top: -121px;
+}
+#mapS3 {
+    position: relative;
+    top: -158px;
+}
+#mapS4 {
+    position: relative;
+    top: -7px;
+}
+#mapS5 {
+    position: relative;
+    top: -158px;
+    right: -33px;
+}
+#mapS6 {
+    position: relative;
+    top: -158px;
+    right: -11px;
+}
+#mapS7 {
+    position: relative;
+    top: -158px;
+}
+#p_4{
+    position:relative;
+    top:10px;
+}
+.notActiv_map {
+    cursor: not-allowed;
+    color: gray;
+/*    text-decoration: none;
+*/}
+
+/*ייצוג אינטרקטיבי_______________*/
+
+#paintsquar_6 {
+    position: relative;
+    right: 427px;
+    top: 9px;
+    width: 167px;
+    height: 47px;
+}
+#knowledge_ h1 {
+    font-family: 'calibril';
+    position: relative;
+    right: 437px;
+    top: -30px;
+    font-size: 24px;
+}
+#knowledge_ iframe {
+    width: 858px;
+    height: 1100px;
+    position: relative;
+    right: 107px;
+    top: -286px;
+}
+#p_5 {
+    position: relative;
+    right: -17px;
+    top: -659px;
+}
